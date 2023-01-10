@@ -1,0 +1,131 @@
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+body {
+  background-color: #e6eff6;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+.landing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .box {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  width: 630px;
+  margin: auto;
+  box-shadow: 1px 1px 21px #00000036;
+}
+.landing .box > div {
+  padding: 40px;
+}
+.landing .box .community {
+  background-color: white;
+  grid-column: span 2;
+}
+.landing .box .community h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.landing .box .community h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+}
+.landing .box .community p {
+  line-height: 1.6;
+  color: hsl(218, 22%, 67%);
+}
+
+.landing .box .subscription {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+}
+.landing .box .subscription h3 {
+  margin-bottom: 15px;
+}
+.landing .box .subscription .price {
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.landing .box .subscription .price span {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 10px;
+  color: hsl(0, 0%, 90%);
+}
+.landing .box .subscription .full {
+  color: hsl(204, 43%, 93%);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.landing .box .subscription .botton {
+  background-color: hsl(71, 73%, 54%);
+  width: 100%;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 6px;
+}
+
+.landing .box .us {
+  background-color: #4abebdd9;
+  color: white;
+}
+.landing .box .us h3 {
+  margin-bottom: 15px;
+}
+.landing .box .us p {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 195px;
+}
+@media (max-width:375px) {
+  .container {
+    padding: 0 30px;
+  }
+  .landing .box {
+    width: 100%;
+    grid-template-columns: repeat(1,auto);
+    margin-top : 70px;
+  }
+  .landing .box .community {
+    grid-column: span 1;
+  }
+  .landing .box > div {
+    padding: 20px;
+  }
+}
